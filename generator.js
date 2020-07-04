@@ -6,18 +6,9 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 
 
-/* Title
-Description
-Table of Contents
-Installation
-Usage
-License
-Contributing
-Tests
-Questions */
+
 getUserInput();
-//console.log(renderContent(ans));
-//writeToFile();
+
 
 async function getUserInput() {
     try {
@@ -40,17 +31,17 @@ async function getUserInput() {
                 name: "title"
             },
             {
-                type: "input",
+                type: "editor",
                 message: "Please describe your project:",
                 name: "description"
             },
             {
-                type: "input",
+                type: "editor",
                 message: "Please provide instructions for installing the project:",
                 name: "installation"
             },
             {
-                type: "input",
+                type: "editor",
                 message: "Please provide usage information:",
                 name: "usage"
             },

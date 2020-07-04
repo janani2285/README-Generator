@@ -5,7 +5,10 @@
 
 ## Description
 
-read me generator
+This node application is used to generate a read me markupfile using user input.
+npm inquirer is used to collect user information through command line.
+Template literals are used to frame the content to write inside the readme file.
+Node File system is used to write into a file.
 
 ## Table of Contents
 
@@ -16,11 +19,12 @@ read me generator
 
 ## Installation
 
-zjbkvb
+npm install command is used in terminal to intall inquirer package
+for this program.
 
 ## Usage
 
-cnvzcjvbcz
+This application is used to generate readme markup files for your github repos.
 
 ## License
 
