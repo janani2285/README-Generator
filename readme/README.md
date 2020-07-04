@@ -1,12 +1,11 @@
-# READ ME
+# SVCXV
 
 ## Badges 
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath) 
-Badges aren't _necessary_, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time. 
+[![License: Public Domain Dedication and License (PDDL)](https://img.shields.io/badge/License-Public Domain Dedication and License (PDDL)-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-read me generator
+svdvd
 
 ## Table of Contents
 
@@ -17,11 +16,11 @@ read me generator
 
 ## Installation
 
-vkjbdkjvbds
+dvscc
 
 ## Usage
 
-bcvhjbvjhdsv
+vczvds
 
 ## License
     
@@ -30,5 +29,5 @@ The last section of a good README is a license. This lets other developers know 
     
 ## Questions
     
-Visit https://github.com/janani2285 (github repo) for the code.
-Reach me @ janani2285@gmail.com for further questions
+Visit https://github.com/dvsvxc (github repo) for the code.<br>
+Reach me @ xvxcv for further questions
