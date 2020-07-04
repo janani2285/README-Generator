@@ -1,5 +1,8 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const util = require("util");
+
+const writeFileAsync = util.promisify(fs.writeFile);
 
 /* Title
 Description
@@ -15,6 +18,9 @@ Questions */
 //writeToFile();
 
  async function getUserInput(){
+     try{
+
+     
     const answers = await inquirer.prompt([
         {
             type: "input",
@@ -60,13 +66,21 @@ Questions */
         }
       ]);
       
-        console.log(renderContent(answers));
+        const content = renderContent(answers);
+        await writeFileAsync("readme/README.md",content);
+    
+        console.log("readMe.md successfully generated!!!");
+        
+      } catch (err) {
+       
+        console.log("Error occured:"+err);
+      }
     
 }
 
 function renderContent(answer){
    // const answer = getUserInput();
-    return `# ${answer.title}
+    return `# ${answer.title.toUpperCase()}
 
     ## Badges
     
