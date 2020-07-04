@@ -157,24 +157,23 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.`;
 ## Badges 
 [![License: ${answer.license}](https://img.shields.io/badge/License-${answer.license}-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
-## Description
-
-${answer.description.trim()}
-
 ## Table of Contents
 
+* [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
 * [Questions](#questions)
 
-## Installation
 
-${answer.installation.trim()}
+## Description
+${(answer.description !=``)? answer.description.trim():`None`}
+
+## Installation
+${(answer.installation !=``)? answer.installation.trim():`None`}
 
 ## Usage
-
-${answer.usage.trim()}
+${(answer.usage !=``)? answer.usage.trim():`None`}
 
 ## License
 
