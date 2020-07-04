@@ -43,7 +43,16 @@ async function getUserInput() {
                 message: "Please provide usage information (once done, press esc, type :wq):",
                 name: "usage"
             },
-
+            {
+                type: "editor",
+                message: "Please provide guidelines for contribution (once done, press esc, type :wq):",
+                name: "contribution"
+            },
+            {
+                type: "editor",
+                message: "Please enter some test cases for your application (once done, press esc, type :wq):",
+                name: "test"
+            },
             {
                 type: "list",
                 message: "Choose from below the list of license you like to include to your project",
@@ -160,6 +169,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.`;
 ${(answer.description !=``)? `* [Description](#description)`:""}
 ${(answer.installation !=``)? `* [Installation](#installation)`:""}
 ${(answer.usage !=``)? `* [Usage](#usage)`:""}
+${(answer.contribution !=``)? `* [Contribution](#contribution)`:""}
+${(answer.test !=``)? `* [Test](#test)`:""}
 * [License](#license)
 * [Questions](#questions)
 
@@ -173,6 +184,12 @@ ${(answer.installation !=``)? answer.installation.trim():""}
 
 ${(answer.usage !=``)? `## Usage`:""}
 ${(answer.usage !=``)? answer.usage.trim():""}
+
+${(answer.contribution !=``)? `## Contribution`:""}
+${(answer.contribution !=``)? answer.contribution.trim():""}
+
+${(answer.test !=``)? `## Test`:""}
+${(answer.test !=``)? answer.test.trim():""}
 
 ## License
 
