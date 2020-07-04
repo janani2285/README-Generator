@@ -32,17 +32,17 @@ async function getUserInput() {
             },
             {
                 type: "editor",
-                message: "Please describe your project:",
+                message: "Please describe your project (once done, press esc, type :w and then type :q):",
                 name: "description"
             },
             {
                 type: "editor",
-                message: "Please provide instructions for installing the project:",
+                message: "Please provide instructions for installing the project (once done, press esc, type :w and then type :q):",
                 name: "installation"
             },
             {
                 type: "editor",
-                message: "Please provide usage information:",
+                message: "Please provide usage information (once done, press esc, type :w and then type :q):",
                 name: "usage"
             },
 
