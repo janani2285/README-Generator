@@ -5,8 +5,6 @@ const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
 
 
-
-
 getUserInput();
 
 
@@ -159,21 +157,22 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.`;
 
 ## Table of Contents
 
-* [Description](#description)
-* [Installation](#installation)
-* [Usage](#usage)
+${(answer.description !=``)? `* [Description](#description)`:""}
+${(answer.installation !=``)? `* [Installation](#installation)`:""}
+${(answer.usage !=``)? `* [Usage](#usage)`:""}
 * [License](#license)
 * [Questions](#questions)
 
 
-## Description
-${(answer.description !=``)? answer.description.trim():`None`}
 
-## Installation
-${(answer.installation !=``)? answer.installation.trim():`None`}
+${(answer.description !=``)? `## Description`:""}
+${(answer.description !=``)? answer.description.trim():""}
 
-## Usage
-${(answer.usage !=``)? answer.usage.trim():`None`}
+${(answer.installation !=``)? `## Installation`:""}
+${(answer.installation !=``)? answer.installation.trim():""}
+
+${(answer.usage !=``)? `## Usage`:""}
+${(answer.usage !=``)? answer.usage.trim():""}
 
 ## License
 
