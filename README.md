@@ -26,7 +26,7 @@ Run ``` node generator.js ``` command in terminal(Mac) or command promt(windows)
 
 ## Demo
 
-[![Demo-youtube](images/0.jpg)](http://www.youtube.com/watch?v=SpoCfg8f39U "Demo")
+[![Demo-youtube](images/0.jpg)](https://youtu.be/7rci9Sf4Czc "Demo")
 
 
 ## Screenshots

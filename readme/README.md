@@ -16,10 +16,12 @@
 
 
 ## Description
-description section
+This is the description section.
+project description goes here.
 
 ## Installation
-installation section
+This is the installation section.
+procedure to install the project goes here.
 
 
 
@@ -28,7 +30,7 @@ installation section
 
 
 ## Test
-test case section
+This is the test case section.
 
 ## License
 
