@@ -11,12 +11,20 @@ Git is used for version controlling and for periodic commits to Gitlab.
 
 ## Installation
 
-``` npm install ``` command is run in terminal(Mac) or command promt(windows) to install all needed packages to run this application.
+Execute ``` npm install ``` command in terminal(Mac) or command promt(windows) to install all needed packages to run this application successfully.
+
+Run ``` node generator.js ``` command in terminal(Mac) or command promt(windows) to start the application.
 
 
 ## Screenshots of the application
-<img src="images/1.png">
+<img src="images/1.png"><br>
 
-<img src="images/2.png">
+<img src="images/2.png"><br>
 
-<img src="images/3.png">
+<img src="images/3.png"><br>
+
+<img src="images/4.png"><br>
+
+<img src="images/5.png"><br>
+
+<img src="images/6.png"><br>
