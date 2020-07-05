@@ -1,5 +1,13 @@
 # README-GENERATOR
 
+## Table of Contents
+
+* [Description](#description)
+* [Installation](#installation)
+* [ApplicationDemo](#demo)
+* [Screenshots](#screenshots)
+
+
 
 ## Description 
 
@@ -16,7 +24,12 @@ Execute ``` npm install ``` command in terminal(Mac) or command promt(windows) t
 Run ``` node generator.js ``` command in terminal(Mac) or command promt(windows) to start the application.
 
 
-## Screenshots of the application
+## Demo
+
+[![Demo-youtube](images/0.jpg)](http://www.youtube.com/watch?v=SpoCfg8f39U "Demo")
+
+
+## Screenshots
 <img src="images/1.png"><br>
 
 <img src="images/2.png"><br>

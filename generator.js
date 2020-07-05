@@ -1,17 +1,15 @@
+//packages
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-
 getUserInput();
 
-
+//function to get user input through command line interface
 async function getUserInput() {
     try {
-
-
         const answers = await inquirer.prompt([
             {
                 type: "input",
@@ -78,6 +76,7 @@ async function getUserInput() {
 
 }
 
+//function to render the content of the markdown file depending on user input
 function renderContent(answer) {
 
     const noticeMIT = `MIT License
@@ -102,7 +101,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.`;
 
-const noticeISC =`ISC License
+    const noticeISC = `ISC License
 
 Copyright (c) [${new Date().getFullYear()}], ${answer.github}
 
@@ -118,7 +117,7 @@ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.`;
 
-const noticeApache =`Apache License
+    const noticeApache = `Apache License
 Version 2.0, January 2004
 
 Copyright [${new Date().getFullYear()}] [${answer.github}]
@@ -135,7 +134,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.`;
 
-const noticeGNU = `GNU GENERAL PUBLIC LICENSE
+    const noticeGNU = `GNU GENERAL PUBLIC LICENSE
 Version 3, 29 June 2007
 
 Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
@@ -166,39 +165,39 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.`;
 
 ## Table of Contents
 
-${(answer.description !=``)? `* [Description](#description)`:""}
-${(answer.installation !=``)? `* [Installation](#installation)`:""}
-${(answer.usage !=``)? `* [Usage](#usage)`:""}
-${(answer.contribution !=``)? `* [Contribution](#contribution)`:""}
-${(answer.test !=``)? `* [Test](#test)`:""}
+${(answer.description != ``) ? `* [Description](#description)` : ""}
+${(answer.installation != ``) ? `* [Installation](#installation)` : ""}
+${(answer.usage != ``) ? `* [Usage](#usage)` : ""}
+${(answer.contribution != ``) ? `* [Contribution](#contribution)` : ""}
+${(answer.test != ``) ? `* [Test](#test)` : ""}
 * [License](#license)
 * [Questions](#questions)
 
 
 
-${(answer.description !=``)? `## Description`:""}
-${(answer.description !=``)? answer.description.trim():""}
+${(answer.description != ``) ? `## Description` : ""}
+${(answer.description != ``) ? answer.description.trim() : ""}
 
-${(answer.installation !=``)? `## Installation`:""}
-${(answer.installation !=``)? answer.installation.trim():""}
+${(answer.installation != ``) ? `## Installation` : ""}
+${(answer.installation != ``) ? answer.installation.trim() : ""}
 
-${(answer.usage !=``)? `## Usage`:""}
-${(answer.usage !=``)? answer.usage.trim():""}
+${(answer.usage != ``) ? `## Usage` : ""}
+${(answer.usage != ``) ? answer.usage.trim() : ""}
 
-${(answer.contribution !=``)? `## Contribution`:""}
-${(answer.contribution !=``)? answer.contribution.trim():""}
+${(answer.contribution != ``) ? `## Contribution` : ""}
+${(answer.contribution != ``) ? answer.contribution.trim() : ""}
 
-${(answer.test !=``)? `## Test`:""}
-${(answer.test !=``)? answer.test.trim():""}
+${(answer.test != ``) ? `## Test` : ""}
+${(answer.test != ``) ? answer.test.trim() : ""}
 
 ## License
 
-${(answer.license === "MIT") ? noticeMIT : (answer.license === "ISC")? noticeISC: (answer.license === "Apache2.0")? noticeApache: (answer.license === "GNU")? noticeGNU:"None"}
+${(answer.license === "MIT") ? noticeMIT : (answer.license === "ISC") ? noticeISC : (answer.license === "Apache2.0") ? noticeApache : (answer.license === "GNU") ? noticeGNU : "None"}
     
     
 ## Questions
     
 Visit https://github.com/${answer.github.trim()} (github repo) for the code.<br>
-Reach me @ ${answer.email.trim()} for further questions
+Reach me @ ${answer.email.trim()} for further questions.
 `
 }
