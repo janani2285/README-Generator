@@ -75,9 +75,34 @@ async function getUserInput() {
     }
 
 }
+function renderUrl(license) {
+    let url = "";
 
+    switch(license){
+        case "MIT":{
+            url = "https://opensource.org/licenses/MIT";
+            break;
+        }
+        case "ISC":{
+            url = "https://opensource.org/licenses/ISC";
+            break;
+        }
+        case "Apache2.0":{
+            url = "https://opensource.org/licenses/Apache-2.0";
+            break;
+        }
+        case "GNU":{
+            url = "https://www.gnu.org/licenses/gpl-3.0";
+            break;
+        }
+    }
+    return url;
+
+}
 //function to render the content of the markdown file depending on user input
 function renderContent(answer) {
+   
+    const url = renderUrl(answer.license);
 
     const noticeMIT = `MIT License
 
@@ -161,7 +186,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.`;
     return `# ${answer.title.toUpperCase().trim()}
 
 ## Badges 
-[![License: ${answer.license}](https://img.shields.io/badge/License-${answer.license}-brightgreen.svg)](https://opensource.org/licenses/MIT)
+[![License: ${answer.license}](https://img.shields.io/badge/License-${answer.license}-brightgreen.svg)](${url})
 
 ## Table of Contents
 
